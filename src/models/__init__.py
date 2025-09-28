@@ -1,0 +1,3 @@
+from .linear_regression import LinearRegressionAnalytic
+from .linear_regression import LinearRegressionGD
+from .linear_regression import LinearRegressionSGD
