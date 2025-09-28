@@ -26,9 +26,9 @@
 - [X] Реализовать градиентный спуск и SGD.
 - [X] Сделать SGD детерминированным (фиксировать seed).
 - [X] Реализовать метрики R², MSE, RMSE, MAE.
-- [ ] Проверить свой класс на train/test.
-- [ ] Сравнить со sklearn.LinearRegression.
-- [ ] Сохранить метрики в таблицу.
+- [X] Проверить свой класс на train/test.
+- [X] Сравнить со sklearn.LinearRegression.
+- [X] Сохранить метрики в таблицу.
 
 ## Раздел 5. Regularization
 - [ ] Реализовать Ridge, Lasso, ElasticNet.

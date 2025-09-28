@@ -1,0 +1,2 @@
+model,train,test
+LinearSGD_default,735.3054513510097,797.860906349863
