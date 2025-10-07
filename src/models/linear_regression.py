@@ -16,7 +16,7 @@ class BaseLinearRegression:
         
 class LinearRegressionAnalytic(BaseLinearRegression):
     def fit(self, X, y):
-        y = np.asarray(y)
+        y = np.asarray(y, dtype=float)
         X_b = np.c_[np.ones((X.shape[0], 1)), X]
 
         theta = np.linalg.inv(X_b.T @ X_b) @ X_b.T @ y
@@ -30,8 +30,8 @@ class LinearRegressionGD(BaseLinearRegression):
     def fit(self, X, y):
         n_samples, n_features = X.shape
         
-        X = np.asarray(X)
-        y = np.asarray(y)
+        X = np.asarray(X, dtype=float)
+        y = np.asarray(y, dtype=float)
 
         rng = np.random.default_rng(self.random_state)
 
@@ -55,8 +55,8 @@ class LinearRegressionSGD(BaseLinearRegression):
         n_samples, n_features = X.shape
         rng = np.random.default_rng(self.random_state)
 
-        X = np.asarray(X)
-        y = np.asarray(y)
+        X = np.asarray(X, dtype=float)
+        y = np.asarray(y, dtype=float)
 
         self.weights_ = rng.normal(loc=0.0, scale=0.01, size=n_features)
         self.bias_ = 0
